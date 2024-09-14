@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do Adubo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><img src="imagens/cropped-Casa-do-Adubo-Empresa-Nutrien-site_Prancheta-1.png" alt="Casa do Adubo Logo"></h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>Bem-vindo à Casa do Adubo</h2>
+            <p>Escolha seus produtos e finalize seu pedido!</p>
+        </section>
+
+        <!-- Produtos Agronômicos -->
+        <section class="products">
+            <div class="product-category">
+                <h2><img src="https://cdn-icons-png.flaticon.com/128/497/497393.png" alt="Produtos Agronômicos" width="40px"> Produtos Agronômicos</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Produto Agronômico 1">
+                        <h4>Adubo Orgânico</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product1">
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Produto Agronômico 2">
+                        <h4>Composto Natural</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product2">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos Pecuários -->
+        <section class="products">
+            <div class="product-category">
+                <h2><img src="https://cdn-icons-png.flaticon.com/128/2469/2469697.png" alt="Produtos Pecuários" width="40px"> Produtos Pecuários</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Produto Pecuário 1">
+                        <h4>Ração Bovina</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product3">
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Produto Pecuário 2">
+                        <h4>Sal Mineral</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product4">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos de Piscina -->
+        <section class="products">
+            <div class="product-category">
+                <h2><img src="https://cdn-icons-png.flaticon.com/128/783/783519.png" alt="Produtos de Piscina" width="40px"> Produtos de Piscina</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Produto Piscina 1">
+                        <h4>Cloro</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product5">
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Produto Piscina 2">
+                        <h4>Filtro de Piscina</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product6">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos de Ferramentas -->
+        <section class="products">
+            <div class="product-category">
+                <h2><img src="https://cdn-icons-png.flaticon.com/128/1835/1835228.png" alt="Ferramentas" width="40px"> Ferramentas</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Ferramenta 1">
+                        <h4>Enxada</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product7">
+                    </div>
+                    <div class="product-item">
+                        <img src="https://via.placeholder.com/150" alt="Ferramenta 2">
+                        <h4>Foice</h4>
+                        <input type="number" placeholder="Quantidade" min="1" id="product8">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seleção do Vendedor -->
+        <section class="vendedor-info">
+            <div class="product-category">
+                <h2><img src="https://cdn-icons-png.flaticon.com/128/3757/3757530.png" alt="Vendedor" width="40px"> Selecione o vendedor</h2>
+            </div>
+            <div class="vendedor-cards"> <!-- Alterado de vendedor-cards para vendedor-cards -->
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 1', '5521999999999')">
+                    <img src="https://via.placeholder.com/100" alt="Vendedor 1">
+                    <h4>Vendedor 1</h4>
+                </div>
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 2', '5521888888888')">
+                    <img src="https://via.placeholder.com/100" alt="Vendedor 2">
+                    <h4>Vendedor 2</h4>
+                </div>
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 3', '5521777777777')">
+                    <img src="https://via.placeholder.com/100" alt="Vendedor 3">
+                    <h4>Vendedor 3</h4>
+                </div>
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 4', '5521666666666')">
+                    <img src="https://via.placeholder.com/100" alt="Vendedor 4">
+                    <h4>Vendedor 4</h4>
+                </div>
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 5', '5521555555555')">
+                    <img src="https://via.placeholder.com/100" alt="Vendedor 5">
+                    <h4>Vendedor 5</h4>
+                </div>
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 6', '5521444444444')">
+                    <img src="https://via.placeholder.com/100" alt="Vendedor 6">
+                    <h4>Vendedor 6</h4>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Área de Preenchimento de Informações -->
+        <section class="customer-info">
+            <h3>Preencha suas informações:</h3>
+            <input type="text" id="nomeCompleto" placeholder="Nome Completo" required>
+            <input type="text" id="nomeFazenda" placeholder="Nome da Fazenda" required>
+            <input type="text" id="cpf" placeholder="CPF" maxlength="14" oninput="mascaraCPF(this)" required>
+            <button class="whatsapp-button" onclick="enviarPedido()"> <img src="https://cdn-icons-png.flaticon.com/128/5968/5968841.png" alt="Whatsapp" width="20px" class="wpp-button">Enviar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Casa do Adubo. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        let numeroWhatsApp = '5521999999999';
+    let vendedorSelecionado = null;
+
+    function selecionarVendedor(nome, numero) {
+    // Remove a classe 'selected' de todos os cards
+    document.querySelectorAll('.vendedor-card').forEach(card => {
+        card.classList.remove('selected');
+    });
+
+    // Adiciona a classe 'selected' ao card do vendedor clicado
+    const vendedorCard = Array.from(document.querySelectorAll('.vendedor-card')).find(card => 
+        card.getAttribute('onclick').includes(numero)
+    );
+
+    if (vendedorCard) {
+        vendedorCard.classList.add('selected');
+    }
+
+    numeroWhatsApp = numero;
+    // Remove o alerta e apenas atualize o número do WhatsApp
+}
+
+        if (vendedorSelecionado) {
+            vendedorSelecionado.classList.remove('selected');
+        }
+        
+        // Adiciona a classe selected ao novo vendedor
+        elemento.classList.add('selected');
+        vendedorSelecionado = elemento;
+
+        // Atualiza o número do WhatsApp
+        numeroWhatsApp = numero;
+    
+        function mascaraCPF(cpf) {
+            cpf.value = cpf.value
+                .replace(/\D/g, '') // Remove caracteres não numéricos
+                .replace(/(\d{3})(\d)/, '$1.$2') // Insere o ponto após os 3 primeiros dígitos
+                .replace(/(\d{3})(\d)/, '$1.$2') // Insere o ponto após os 6 primeiros dígitos
+                .replace(/(\d{3})(\d{1,2})$/, '$1-$2'); // Insere o traço antes dos últimos 2 dígitos
+        }
+    
+        function enviarPedido() {
+            const nomeCompleto = document.getElementById('nomeCompleto').value;
+            const nomeFazenda = document.getElementById('nomeFazenda').value;
+            const cpf = document.getElementById('cpf').value;
+            const product1 = document.getElementById('product1').value || 0;
+            const product2 = document.getElementById('product2').value || 0;
+            const product3 = document.getElementById('product3').value || 0;
+            const product4 = document.getElementById('product4').value || 0;
+            const product5 = document.getElementById('product5').value || 0;
+            const product6 = document.getElementById('product6').value || 0;
+            const product7 = document.getElementById('product7').value || 0;
+            const product8 = document.getElementById('product8').value || 0;
+    
+            // Monta a mensagem para o WhatsApp
+            const mensagem = `*Pedido de Produtos*\n\n` +
+                `*Nome:* ${nomeCompleto}\n` +
+                `*Fazenda:* ${nomeFazenda}\n` +
+                `*CPF:* ${cpf}\n\n` +
+                `*Produtos Selecionados:*\n` +
+                (product1 > 0 ? `Adubo Orgânico: ${product1}\n` : '') +
+                (product2 > 0 ? `Composto Natural: ${product2}\n` : '') +
+                (product3 > 0 ? `Ração Bovina: ${product3}\n` : '') +
+                (product4 > 0 ? `Sal Mineral: ${product4}\n` : '') +
+                (product5 > 0 ? `Cloro: ${product5}\n` : '') +
+                (product6 > 0 ? `Filtro de Piscina: ${product6}\n` : '') +
+                (product7 > 0 ? `Enxada: ${product7}\n` : '') +
+                (product8 > 0 ? `Foice: ${product8}\n` : '');
+    
+            if (nomeCompleto && nomeFazenda && cpf) {
+                // Envia o pedido via WhatsApp
+                const url = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
+                window.open(url, '_blank');
+            } else {
+                alert('Por favor, preencha todas as informações.');
+            }
+        }
+    </script>
+    
