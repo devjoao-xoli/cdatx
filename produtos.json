@@ -1,0 +1,59 @@
+{
+    "agronomicos": [
+        {
+            "nome": "Adubo Orgânico",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product1"
+        },
+        {
+            "nome": "Composto Natural",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product2"
+        },
+        {
+            "nome": "Calcário",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product9"
+        }
+        {
+            "nome": "Teste",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product9"
+        }
+    ],
+    "pecuarios": [
+        {
+            "nome": "Ração Bovina",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product3"
+        },
+        {
+            "nome": "Sal Mineral",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product4"
+        }
+    ],
+    "piscina": [
+        {
+            "nome": "Cloro",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product5"
+        },
+        {
+            "nome": "Filtro de Piscina",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product6"
+        }
+    ],
+    "ferramentas": [
+        {
+            "nome": "Enxada",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product7"
+        },
+        {
+            "nome": "Foice",
+            "imagem": "https://via.placeholder.com/150",
+            "id": "product8"
+        }]
+}

@@ -27,80 +27,125 @@
         
 
         <!-- Produtos Agronômicos -->
-        <section class="products">
-            <div class="product-category">
-                <h2><img src="https://cdn-icons-png.flaticon.com/128/497/497393.png" alt="Produtos Agronômicos" width="40px"> Produtos Agronômicos</h2>
-                <div class="product-list">
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Produto Agronômico 1">
-                        <h4>Adubo Orgânico</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product1">
-                    </div>
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Produto Agronômico 2">
-                        <h4>Composto Natural</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product2">
-                    </div>
-                </div>
+<section class="products agronomicos">
+    <div class="product-category">
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/497/497393.png" alt="Produtos Agronômicos" width="40px"> Produtos Agronômicos</h2>
+        <button class="toggle-button" onclick="toggleProducts('agronomicos')">Ver Mais</button>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Agronômico 1">
+                <h4>Adubo Orgânico</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product1">
             </div>
-        </section>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Agronômico 2">
+                <h4>Composto Natural</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product2">
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Agronômico 3">
+                <h4>Calcário</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product9">
+            </div>
+            <div class="product-item hidden">
+                <img src="https://via.placeholder.com/150" alt="Produto Agronômico 4">
+                <h4>Fertilizante NPK</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product10">
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Produtos Pecuários -->
-        <section class="products">
-            <div class="product-category">
-                <h2><img src="https://cdn-icons-png.flaticon.com/128/2469/2469697.png" alt="Produtos Pecuários" width="40px"> Produtos Pecuários</h2>
-                <div class="product-list">
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Produto Pecuário 1">
-                        <h4>Ração Bovina</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product3">
-                    </div>
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Produto Pecuário 2">
-                        <h4>Sal Mineral</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product4">
-                    </div>
-                </div>
+<!-- Produtos Pecuários -->
+<section class="products pecuarios">
+    <div class="product-category">
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/2469/2469697.png" alt="Produtos Pecuários" width="40px"> Produtos Pecuários</h2>
+        <button class="toggle-button" onclick="toggleProducts('pecuarios')">Ver Mais</button>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Pecuário 1">
+                <h4>Ração Bovina</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product3">
             </div>
-        </section>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Pecuário 2">
+                <h4>Sal Mineral</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product4">
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Pecuário 3">
+                <h4>Suplemento Proteico</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product11">
+            </div>
+            <div class="product-item hidden">
+                <img src="https://via.placeholder.com/150" alt="Produto Pecuário 4">
+                <h4>Vitaminas para Gado</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product12">
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Produtos de Piscina -->
-        <section class="products">
-            <div class="product-category">
-                <h2><img src="https://cdn-icons-png.flaticon.com/128/783/783519.png" alt="Produtos de Piscina" width="40px"> Produtos de Piscina</h2>
-                <div class="product-list">
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Produto Piscina 1">
-                        <h4>Cloro</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product5">
-                    </div>
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Produto Piscina 2">
-                        <h4>Filtro de Piscina</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product6">
-                    </div>
-                </div>
+<!-- Produtos de Piscina -->
+<section class="products piscina">
+    <div class="product-category">
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/783/783519.png" alt="Produtos de Piscina" width="40px"> Produtos de Piscina</h2>
+        <button class="toggle-button" onclick="toggleProducts('piscina')">Ver Mais</button>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Piscina 1">
+                <h4>Cloro</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product5">
             </div>
-        </section>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Piscina 2">
+                <h4>Filtro de Piscina</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product6">
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Produto Piscina 3">
+                <h4>Algicida</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product13">
+            </div>
+            <div class="product-item hidden">
+                <img src="https://via.placeholder.com/150" alt="Produto Piscina 4">
+                <h4>Ph Plus</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product14">
+            </div>
+        </div>
+    </div>
+</section>
 
-        <!-- Produtos de Ferramentas -->
-        <section class="products">
-            <div class="product-category">
-                <h2><img src="https://cdn-icons-png.flaticon.com/128/1835/1835228.png" alt="Ferramentas" width="40px"> Ferramentas</h2>
-                <div class="product-list">
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Ferramenta 1">
-                        <h4>Enxada</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product7">
-                    </div>
-                    <div class="product-item">
-                        <img src="https://via.placeholder.com/150" alt="Ferramenta 2">
-                        <h4>Foice</h4>
-                        <input type="number" placeholder="Quantidade" min="1" id="product8">
-                    </div>
-                </div>
+<!-- Produtos de Ferramentas -->
+<section class="products ferramentas">
+    <div class="product-category">
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/1835/1835228.png" alt="Ferramentas" width="40px"> Ferramentas</h2>
+        <button class="toggle-button" onclick="toggleProducts('ferramentas')">Ver Mais</button>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Ferramenta 1">
+                <h4>Enxada</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product7">
             </div>
-        </section>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Ferramenta 2">
+                <h4>Foice</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product8">
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/150" alt="Ferramenta 3">
+                <h4>Machado</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product15">
+            </div>
+            <div class="product-item hidden">
+                <img src="https://via.placeholder.com/150" alt="Ferramenta 4">
+                <h4>Pá</h4>
+                <input type="number" placeholder="Quantidade" min="1" id="product16">
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- Seleção do Vendedor -->
         <section class="vendedor-info">
@@ -153,6 +198,55 @@
     </footer>
 
     <script>
+        // Chamar a função para exibir os primeiros 3 produtos ao carregar a página
+    document.addEventListener('DOMContentLoaded', showInitialProducts);
+
+
+        // Função para mostrar inicialmente apenas 3 produtos
+    function showInitialProducts() {
+        const productLists = document.querySelectorAll('.product-list');
+
+        productLists.forEach((list) => {
+            const items = list.querySelectorAll('.product-item');
+            items.forEach((item, index) => {
+                if (index < 3) {
+                    item.classList.add('visible');
+                } else {
+                    item.classList.add('hidden'); // Inicialmente oculta os produtos adicionais
+                }
+            });
+        });
+    }
+
+    function toggleProducts(category) {
+    const productList = document.querySelector(`.${category} .product-list`);
+    const hiddenItems = productList.querySelectorAll('.product-item.hidden');
+    const toggleButton = document.querySelector(`.${category} .toggle-button`);
+    
+    if (hiddenItems.length > 0) {
+        // Mostrar mais produtos
+        hiddenItems.forEach((item, index) => {
+            if (index < 3) {
+                item.classList.remove('hidden');
+                item.classList.add('visible');
+            }
+        });
+        toggleButton.textContent = 'Ver Menos'; // Muda o texto do botão
+    } else {
+        // Mostrar menos produtos
+        const items = productList.querySelectorAll('.product-item');
+        items.forEach((item, index) => {
+            if (index >= 3) {
+                item.classList.remove('visible');
+                item.classList.add('hidden');
+            }
+        });
+        toggleButton.textContent = 'Ver Mais'; // Muda o texto do botão
+    }
+}
+
+
+
         function filtrarProdutos() {
     const pesquisa = document.getElementById('globalSearch').value.toLowerCase();
     const produtos = document.querySelectorAll('.product-item');
@@ -254,5 +348,6 @@
                 alert('Por favor, preencha todas as informações.');
             }
         }
-    </script>
-    
+        </script>
+    </body>
+</html>
