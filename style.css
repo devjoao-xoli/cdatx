@@ -262,4 +262,18 @@ footer p {
     }
 }
 
+@media (max-width: 600px) {
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; /* Espaçamento entre os itens */
+    }
+
+    .product-item {
+        flex: 1 1 calc(50% - 10px); /* Ajusta os itens para dois na linha */
+        box-sizing: border-box;
+    }
+}
+
+
 
