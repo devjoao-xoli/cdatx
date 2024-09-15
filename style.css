@@ -244,6 +244,19 @@ footer p {
     margin: 0;
 }
 
+#sitedev {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+#sitedev:hover {
+    text-decoration: underline;
+    background-color: #333;
+    border-radius: 5px;
+    padding: 5px;
+    scale: 10px;
+}
+
 /* Responsividade */
 @media screen and (min-width: 1024px) {
     .vendedor-cards {
