@@ -19,6 +19,13 @@
             <p>Escolha seus produtos e finalize seu pedido!</p>
         </section>
 
+        <section class="search-section">
+            <img src="https://cdn-icons-png.flaticon.com/128/149/149309.png" alt="Busca" width="30px">
+            <input type="text" id="globalSearch" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
+            <p id="noResultsMessage" style="display: none; color: red;">Produto não encontrado</p>
+        </section>
+        
+
         <!-- Produtos Agronômicos -->
         <section class="products">
             <div class="product-category">
@@ -98,10 +105,10 @@
         <!-- Seleção do Vendedor -->
         <section class="vendedor-info">
             <div class="product-category">
-                <h2><img src="https://cdn-icons-png.flaticon.com/128/3757/3757530.png" alt="Vendedor" width="40px"> Selecione o vendedor</h2>
+                <h2><img src="https://cdn-icons-png.flaticon.com/128/3757/3757530.png" alt="Vendedor" width="40px"> Selecione o vendedor:</h2>
             </div>
             <div class="vendedor-cards"> <!-- Alterado de vendedor-cards para vendedor-cards -->
-                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 1', '5521999999999')">
+                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 1', '5573998692369')">
                     <img src="https://via.placeholder.com/100" alt="Vendedor 1">
                     <h4>Vendedor 1</h4>
                 </div>
@@ -146,6 +153,30 @@
     </footer>
 
     <script>
+        function filtrarProdutos() {
+    const pesquisa = document.getElementById('globalSearch').value.toLowerCase();
+    const produtos = document.querySelectorAll('.product-item');
+    let produtoEncontrado = false;
+
+    produtos.forEach(produto => {
+        const nomeProduto = produto.querySelector('h4').textContent.toLowerCase();
+        if (nomeProduto.includes(pesquisa)) {
+            produto.style.display = 'block';
+            produtoEncontrado = true;
+        } else {
+            produto.style.display = 'none';
+        }
+    });
+
+    // Exibe ou esconde a mensagem de produto não encontrado
+    const noResultsMessage = document.getElementById('noResultsMessage');
+    if (produtoEncontrado) {
+        noResultsMessage.style.display = 'none';
+    } else {
+        noResultsMessage.style.display = 'block';
+    }
+}
+
         let numeroWhatsApp = '5521999999999';
     let vendedorSelecionado = null;
 

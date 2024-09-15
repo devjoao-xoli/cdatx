@@ -31,7 +31,7 @@ header img {
 }
 
 .hero {
-    background: #81C784; /* Verde claro */
+    background: #66bb6a; /* Verde claro */
     color: #fff;
     padding: 50px 10px;
     text-align: center;
@@ -40,6 +40,25 @@ header img {
 .hero h2 {
     margin-bottom: 10px;
 }
+
+.search-section {
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.search-section img {
+    margin-right: 10px
+}
+
+.search-section input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 
 .products {
     padding: 20px;
@@ -111,6 +130,7 @@ header img {
 
 /* Estilo do card do vendedor */
 .vendedor-card {
+    margin: auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -118,8 +138,8 @@ header img {
     text-align: center;
     cursor: pointer;
     transition: border 0.3s ease, transform 0.3s ease;
-    max-width: 300px; /* Tamanho máximo dos cards */
-    box-sizing: border-box; /* Inclui padding e border no width */
+    max-width: 300px;
+    box-sizing: border-box;
 }
 
 .vendedor-card img {
@@ -136,8 +156,8 @@ header img {
 }
 
 .vendedor-card.selected {
-    border: 2px solid #4CAF50; /* Verde suave para seleção */
-    transform: scale(1.05); /* Pequeno zoom para destaque */
+    border: 2px solid #4CAF50;
+    transform: scale(1.05);
 }
 
 .customer-info {
