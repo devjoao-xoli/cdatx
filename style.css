@@ -17,7 +17,7 @@ header {
     color: #fff;
     padding: 20px;
     text-align: left;
-    width: 100%;
+    width: 100vw;
 }
 
 header h1 {
@@ -238,6 +238,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
+    width: 100vw;
 }
 
 footer p {
@@ -272,9 +273,22 @@ footer p {
 }
 
 @media (max-width: 600px) {
+    header {
+        width: 400px
+    }
+
     header img {
         width: 200px;
     }
+
+    .hero {
+        width: 420px;
+    }
+
+    .search-section input {
+        width: 200px;
+    }
+
     .product-list {
         display: flex;
         flex-wrap: wrap;
@@ -284,6 +298,10 @@ footer p {
     .product-item {
         flex: 1 1 calc(50% - 10px); /* Ajusta os itens para dois na linha */
         box-sizing: border-box;
+    }
+
+    footer {
+        width: 400px;
     }
 }
 

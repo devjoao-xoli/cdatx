@@ -22,7 +22,7 @@
         <section class="search-section">
             <img src="https://cdn-icons-png.flaticon.com/128/149/149309.png" alt="Busca" width="30px">
             <input type="text" id="globalSearch" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
-            <p id="noResultsMessage" style="display: none; color: red;">Produto não encontrado</p>
+            <p id="noResultsMessage" style="display: none; color: red;">!Produto não encontrado</p>
         </section>
         
 
@@ -42,7 +42,7 @@
                 <h4>Composto Natural</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product2">
             </div>
-            <div class="product-item">
+            <div class="product-item hidden">
                 <img src="https://via.placeholder.com/150" alt="Produto Agronômico 3">
                 <h4>Calcário</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product9">
@@ -72,7 +72,7 @@
                 <h4>Sal Mineral</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product4">
             </div>
-            <div class="product-item">
+            <div class="product-item hidden">
                 <img src="https://via.placeholder.com/150" alt="Produto Pecuário 3">
                 <h4>Suplemento Proteico</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product11">
@@ -102,7 +102,7 @@
                 <h4>Filtro de Piscina</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product6">
             </div>
-            <div class="product-item">
+            <div class="product-item hidden">
                 <img src="https://via.placeholder.com/150" alt="Produto Piscina 3">
                 <h4>Algicida</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product13">
@@ -132,7 +132,7 @@
                 <h4>Foice</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product8">
             </div>
-            <div class="product-item">
+            <div class="product-item hidden">
                 <img src="https://via.placeholder.com/150" alt="Ferramenta 3">
                 <h4>Machado</h4>
                 <input type="number" placeholder="Quantidade" min="1" id="product15">
@@ -197,6 +197,8 @@
             <p>Site desenvolvido por <a href="https://github.com/devjoao-xoli" target="_blank" id="sitedev">João Pedro🤓</a></p>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 
     <script>
         // Chamar a função para exibir os primeiros 3 produtos ao carregar a página
