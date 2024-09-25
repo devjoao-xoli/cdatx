@@ -108,6 +108,7 @@ header img {
 
 .product-item.visible {
     display: block;
+    width: auto;
 }
 
 .product-item.hidden {
@@ -304,6 +305,3 @@ footer p {
         width: 400px;
     }
 }
-
-
-
