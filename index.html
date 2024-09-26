@@ -22,7 +22,7 @@
         <section class="search-section">
             <img src="https://cdn-icons-png.flaticon.com/128/149/149309.png" alt="Busca" width="30px">
             <input type="text" id="globalSearch" placeholder="Pesquisar produtos..." oninput="filtrarProdutos()">
-            <p id="noResultsMessage" style="display: none; color: red;">!Produto não encontrado</p>
+            <p id="noResultsMessage" style="display: none; color: red;">*Produto não encontrado</p>
         </section>
         
 
@@ -48,7 +48,7 @@
                 <h4>Fertilizante Nutriplant Green Top Complex 151 02kg</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
-            <div class="product-item hidden">
+            <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/2/62860_1_5.jpg" alt="Substrato Tropstrato V9 Mix 25kg">
                 <h4>Substrato Tropstrato V9 Mix 25kg</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>  
@@ -93,7 +93,7 @@
                 <h4>Mectimax 3,15% Gold Inj 01 Lt</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
-            <div class="product-item hidden">
+            <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/7/47310_1_2.jpg" alt="Tick Gard Pour On 5l">
                 <h4>Tick Gard Pour On 5l</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
@@ -138,7 +138,7 @@
                 <h4>Algicida Manutenção 5l - Hidroazul</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
-            <div class="product-item hidden">
+            <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/5/6526_1_6.jpg" alt="Barrilha Leve 02kg - Hidroazul">
                 <h4>Barrilha Leve 02kg - Hidroazul</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
@@ -183,7 +183,7 @@
                 <h4>Pá Debico Pequena C/ Cabo 45cm - Tramontina</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
                 
-            <div class="product-item hidden">
+            <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/2/22630_1_5.jpg" alt="Pá Quadrada C/ Cabo 71cm - Tramontina">
                 <h4>Pá Quadrada C/ Cabo 71cm - Tramontina</h4>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
@@ -214,27 +214,27 @@
             </div>
             <div class="vendedor-cards"> <!-- Alterado de vendedor-cards para vendedor-cards -->
                 <div class="vendedor-card" onclick="selecionarVendedor('Altiele', '5573999944145')">
-                    <img src="imagens/tico.jpg" alt="Vendedor 1">
+                    <img src="imagens/tico.jpg" alt="Altiele">
                     <h4>Altiele</h4>
                 </div>
-                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 2', '5573999434371')">
-                    <img src="imagens/dani.jpg" alt="Vendedor 2">
+                <div class="vendedor-card" onclick="selecionarVendedor('Daniela', '5573999434371')">
+                    <img src="imagens/dani.jpg" alt="Daniela">
                     <h4>Daniela</h4>
                 </div>
-                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 3', '5573998659616')">
-                    <img src="imagens/lore.jpg" alt="Vendedor 3">
+                <div class="vendedor-card" onclick="selecionarVendedor('Lorena', '5573998659616')">
+                    <img src="imagens/lore.jpg" alt="Lorena">
                     <h4>Lorena</h4>
                 </div>
-                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 4', '5573999184406')">
-                    <img src="imagens/nati.jpg" alt="Vendedor 4">
+                <div class="vendedor-card" onclick="selecionarVendedor('Natiele', '5573999184406')">
+                    <img src="imagens/nati.jpg" alt="Natiele">
                     <h4>Natiele</h4>
                 </div>
-                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 5', '5573999365117')">
+                <div class="vendedor-card" onclick="selecionarVendedor('Paulo', '5573999365117')">
                     <img src="imagens/paulo.jpg" alt="Paulo">
                     <h4>Paulo</h4>
                 </div>
-                <div class="vendedor-card" onclick="selecionarVendedor('Vendedor 6', '5573999866165')">
-                    <img src="imagens/vera.jpg" alt="Vendedor 6">
+                <div class="vendedor-card" onclick="selecionarVendedor('Veronice', '5573999866165')">
+                    <img src="imagens/vera.jpg" alt="Veronice">
                     <h4>Veronice</h4>
                 </div>
             </div>
@@ -259,18 +259,18 @@
     </footer>
 
     <script>
-        // Chamar a função para exibir os primeiros 3 produtos ao carregar a página
+        // Chamar a função para exibir os primeiros 4 produtos ao carregar a página
     document.addEventListener('DOMContentLoaded', showInitialProducts);
 
 
-        // Função para mostrar inicialmente apenas 3 produtos
+        // Função para mostrar inicialmente apenas 4 produtos
     function showInitialProducts() {
         const productLists = document.querySelectorAll('.product-list');
 
         productLists.forEach((list) => {
             const items = list.querySelectorAll('.product-item');
             items.forEach((item, index) => {
-                if (index < 3) {
+                if (index < 4) {
                     item.classList.add('visible');
                 } else {
                     item.classList.add('hidden'); // Inicialmente oculta os produtos adicionais
@@ -279,50 +279,86 @@
         });
     }
 
-    function toggleProducts(category) {
-    const productList = document.querySelector(`.${category} .product-list`);
-    const hiddenItems = productList.querySelectorAll('.product-item.hidden');
-    const toggleButton = document.querySelector(`.${category} .toggle-button`);
-    
-    if (hiddenItems.length > 0) {
-        // Mostrar todos os produtos ocultos
-        hiddenItems.forEach((item) => {
-            item.classList.remove('hidden');
-            item.classList.add('visible');
-        });
-        toggleButton.textContent = 'Ver Menos'; // Muda o texto do botão
-    } else {
-        // Mostrar apenas os 3 produtos iniciais
-        const items = productList.querySelectorAll('.product-item');
-        items.forEach((item, index) => {
-            if (index >= 3) {
-                item.classList.remove('visible');
-                item.classList.add('hidden');
+    // Função para mostrar apenas os primeiros 4 produtos de cada categoria
+    function resetarVisibilidadeProdutos() {
+        const productLists = document.querySelectorAll('.product-list');
+
+        productLists.forEach(productList => {
+            const produtos = productList.querySelectorAll('.product-item');
+
+            // Ocultar todos os produtos inicialmente
+            produtos.forEach(produto => {
+                produto.classList.remove('visible');
+                produto.classList.add('hidden');
+            });
+
+            // Mostrar apenas os primeiros 4 produtos
+            for (let i = 0; i < Math.min(4, produtos.length); i++) {
+                produtos[i].classList.remove('hidden');
+                produtos[i].classList.add('visible');
             }
         });
-        toggleButton.textContent = 'Ver Mais'; // Muda o texto do botão
-    }
-}
 
+        // Atualiza o estado dos botões de "Ver Mais" e "Ver Menos"
+        resetarVerMaisVerMenos();
+    }
+
+    // Função para alternar entre mostrar mais ou menos produtos
+    function toggleProducts(category) {
+        const productList = document.querySelector(`.${category} .product-list`);
+        const hiddenItems = productList.querySelectorAll('.product-item.hidden');
+        const toggleButton = document.querySelector(`.${category} .toggle-button`);
+
+        if (hiddenItems.length > 0) {
+            // Mostrar todos os produtos ocultos
+            hiddenItems.forEach((item) => {
+                item.classList.remove('hidden');
+                item.classList.add('visible');
+            });
+            toggleButton.textContent = 'Ver Menos'; // Muda o texto do botão
+        } else {
+            // Mostrar apenas os 4 produtos iniciais
+            const items = productList.querySelectorAll('.product-item');
+            items.forEach((item, index) => {
+                if (index >= 4) {
+                    item.classList.remove('visible');
+                    item.classList.add('hidden');
+                }
+            });
+            toggleButton.textContent = 'Ver Mais'; // Muda o texto do botão
+        }
+
+        // Reinicializa o estado dos botões "Ver Mais" e "Ver Menos" após a alternância
+        resetarVerMaisVerMenos();
+    }
+
+    // Função para filtrar produtos com base na pesquisa
     function filtrarProdutos() {
         const pesquisa = document.getElementById('globalSearch').value.toLowerCase();
-        const produtos = document.querySelectorAll('.product-item');
+        const productLists = document.querySelectorAll('.product-list');
         let produtoEncontrado = false;
 
+        // Se a pesquisa estiver vazia, volta ao estado inicial de exibir apenas 4 produtos visíveis
         if (pesquisa === "") {
-            // Se a pesquisa estiver vazia, volta ao estado inicial de exibir apenas 3 produtos
-            showInitialProducts();
+            resetarVisibilidadeProdutos();
             return; // Sai da função
         }
 
-        produtos.forEach(produto => {
-            const nomeProduto = produto.querySelector('h4').textContent.toLowerCase();
-            if (nomeProduto.includes(pesquisa)) {
-                produto.style.display = 'block';
-                produtoEncontrado = true;
-            } else {
-                produto.style.display = 'none';
-            }
+        productLists.forEach(productList => {
+            const produtos = productList.querySelectorAll('.product-item');
+            
+            // Filtra os produtos com base na pesquisa
+            produtos.forEach(produto => {
+                const nomeProduto = produto.querySelector('h4').textContent.toLowerCase();
+                if (nomeProduto.includes(pesquisa)) {
+                    produto.classList.remove('hidden');
+                    produto.classList.add('visible');
+                    produtoEncontrado = true;
+                } else {
+                    produto.classList.remove('visible');
+                    produto.classList.add('hidden');
+                }
+            });
         });
 
         // Exibe ou esconde a mensagem de produto não encontrado
@@ -332,8 +368,28 @@
         } else {
             noResultsMessage.style.display = 'block';
         }
-}
 
+        // Reinicializa o estado dos botões "Ver Mais" e "Ver Menos" após a filtragem
+        resetarVerMaisVerMenos();
+    }
+
+    // Função para resetar o estado dos botões "Ver Mais" e "Ver Menos"
+    function resetarVerMaisVerMenos() {
+        const productLists = document.querySelectorAll('.product-list');
+
+        productLists.forEach(productList => {
+            const items = productList.querySelectorAll('.product-item.visible');
+            const toggleButton = productList.querySelector('.toggle-button');
+
+            // Se houver produtos suficientes, exiba o botão de "Ver Mais"
+            if (items.length > 4) {
+                toggleButton.style.display = 'block'; // Mostrar botão "Ver Mais"
+                toggleButton.textContent = 'Ver Mais'; // Definir o texto
+            } else {
+                toggleButton.style.display = 'none'; // Ocultar botão
+            }
+        });
+    }
 
             // Função para selecionar o vendedor e adicionar borda
     let numeroWhatsApp = '5521999999999'; 
@@ -385,7 +441,7 @@
             return;
         }
 
-        const mensagem = `Olá, ${vendedorSelecionado},\n\nGostaria de fazer o seguinte pedido:\n\nCliente: ${nomeCompleto}\nFazenda: ${nomeFazenda}\nCPF: ${cpf}\n\nProdutos:\n${produtosSelecionados.join('\n')}`;
+        const mensagem = `Olá, ${vendedorSelecionado}!\n\nGostaria de fazer o seguinte pedido:\n\nCliente: ${nomeCompleto}\nFazenda: ${nomeFazenda}\nCPF: ${cpf}\n\nProdutos:\n${produtosSelecionados.join('\n')}`;
         const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
 
         window.open(urlWhatsApp, '_blank');

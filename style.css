@@ -91,9 +91,8 @@ header img {
 
 .product-list {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .product-item {
@@ -102,8 +101,8 @@ header img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
-    width: calc(33.33% - 20px);
-    display: none;
+    display: none; /* Mantido como 'none' até ser mostrado */
+    box-sizing: border-box;
 }
 
 .product-item.visible {
