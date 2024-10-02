@@ -73,6 +73,7 @@ header img {
     cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
     border-radius: 4px; /* Bordas arredondadas */
 }
+
 .products {
     padding: 20px;
 }
@@ -89,6 +90,34 @@ header img {
     color: #3b5d3f; /* Verde escuro moderado */
 }
 
+/* Estilo para as subdivisões */
+.product-subcategory {
+    margin-left: 20px; /* Move as subdivisões para a esquerda */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-subcategory h3 {
+    margin-bottom: 10px;
+    color: #2c6e3e; /* Tom de verde mais escuro para o título */
+}
+
+/* Estilo do botão */
+.toggle-button {
+    background-color: #4CAF50; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove bordas */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Alinhamento do texto */
+    display: inline-block; /* Exibição em linha */
+    font-size: 16px; /* Tamanho da fonte */
+    margin: 4px 2px; /* Margem */
+    cursor: pointer; /* Cursor em forma de mão ao passar sobre o botão */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Lista de produtos */
 .product-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 colunas fixas */

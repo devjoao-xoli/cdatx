@@ -30,43 +30,35 @@
 <section class="products agronomicos">
     <div class="product-category">
         <h2><img src="https://cdn-icons-png.flaticon.com/128/497/497393.png" alt="Produtos Agronômicos" width="40px"> Produtos Agronômicos</h2>
-        <button class="toggle-button" onclick="toggleProducts('agronomicos')">Ver Mais</button>
-        <div class="product-list">
 
-            <div class="product-item">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/3/5/35656_1_3.jpg" alt="Aminoagro Fruto Plus Nitro 05l">
-                <h4>Aminoagro Fruto Plus Nitro 05l</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
+        <!-- Adubos Foliares -->
+        <div class="product-subcategory adubos-foliares">
+            <h3>Adubos Foliares</h3>
+            <button class="toggle-button" onclick="toggleProducts('adubos-foliares')">Ver Mais</button>
+            <div class="product-list adubos-foliares">
+                <div class="product-item">
+                    <img src="https://example.com/img-adubo-foliar1.jpg" alt="Adubo Foliar 1">
+                    <h4>Adubo Foliar 1</h4>
+                    <span class="preco">R$ 50,00</span>
+                    <input type="number" placeholder="Quantidade" min="1">
+                </div>
+                <!-- Mais produtos aqui -->
+            </div>
+        </div>
 
-            <div class="product-item">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/3/3/33076_1_3.jpg" alt="Yaratera Krista Map 12.61.00 25kg">
-                <h4>Yaratera Krista Map 12.61.00 25kg</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
-
-            <div class="product-item">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/1/11347_1.jpg" alt="Fertilizante Nutriplant Green Top Complex 151 02kg">
-                <h4>Fertilizante Nutriplant Green Top Complex 151 02kg</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
-
-            <div class="product-item">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/2/62860_1_5.jpg" alt="Substrato Tropstrato V9 Mix 25kg">
-                <h4>Substrato Tropstrato V9 Mix 25kg</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>  
-
-            <div class="product-item hidden">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/0/60050_1_1.jpg" alt="Substrato Tropstrato V8 25kg">
-                <h4>Substrato Tropstrato V8 25kg</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
-
-            <div class="product-item hidden">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/d91fb67a81031b678afc3ed3cb4ec596/4/4/44038_1_4.jpg" alt="Substrato Tropstrato Floreira E Vaso 4kg">
-                <h4>Substrato Tropstrato Floreira E Vaso 4kg</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
-            
-            <div class="product-item hidden">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/4/54230_1_4.jpg" alt="Substrato Tropstrato Floreira E Vaso 20kg">
-                <h4>Substrato Tropstrato Floreira E Vaso 20kg</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
+        <!-- Adubos Sólidos -->
+        <div class="product-subcategory adubos-solidos">
+            <h3>Adubos Sólidos</h3>
+            <button class="toggle-button" onclick="toggleProducts('adubos-solidos')">Ver Mais</button>
+            <div class="product-list adubos-solidos">
+                <div class="product-item">
+                    <img src="https://example.com/img-adubo-solido1.jpg" alt="Adubo Sólido 1">
+                    <h4>Adubo Sólido 1</h4>
+                    <span class="preco">R$ 50,00</span>
+                    <input type="number" placeholder="Quantidade" min="1">
+                </div>
+                <!-- Mais produtos aqui -->
+            </div>
         </div>
     </div>
 </section>
@@ -81,36 +73,245 @@
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/3/13337_1_1.jpg" alt="Ruminol 100ml">
                 <h4>Ruminol 100ml</h4>
+                <span class="preco">R$ 29,73</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/0/20048_1_2.jpg" alt="Terracam Spray 125ml">
                 <h4>Terracam Spray 125ml</h4>
+                <span class="preco">Terracam Spray 125ml</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/5/15304_1_1.jpg" alt="Mectimax 3,15% Gold Injetável 500ml">
+                <h4>Mectimax 3,15% Gold Injetável 500ml</h4>
+                <span class="preco">R$ 179,36</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/0/50628_1_4.jpg" alt="Mectimax 3,15% Gold Inj 01 Lt">
                 <h4>Mectimax 3,15% Gold Inj 01 Lt</h4>
+                <span class="preco">R$ 304,06</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/7/47310_1_2.jpg" alt="Tick Gard Pour On 5l">
                 <h4>Tick Gard Pour On 5l</h4>
+                <span class="preco">R$ 1.136,23</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/9/7/9706_1_6.jpg" alt="Tylan 200 50ml">
+                <h4>Tylan 200 50ml</h4>
+                <span class="preco">R$ 42,46</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/1/11872_1.jpg" alt="Tylan 200 100ml">
                 <h4>Tylan 200 100ml</h4>
+                <span class="preco">R$ 78,96</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/2/52973_1_2.jpg" alt="Placentex Injetável 100ml">
                 <h4>Placentex Injetável 100ml</h4>
+                <span class="preco">R$ 8,06</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
             
             <div class="product-item hidden">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/8/1855_1_1.jpg" alt="Terramicina La Injetável 50ml">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/6/66999_1_2.jpg" alt="Suplemento Mineral Fosbovinho Proteico Ade 25kg">
                 <h4>Suplemento Mineral Fosbovinho Proteico Ade 25kg</h4>
+                <span class="preco">R$ 182,61</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/d91fb67a81031b678afc3ed3cb4ec596/5/2/52711_1_5.jpg" alt="Turbocalcio 500ml">
+                <h4>Turbocalcio 500ml</h4>
+                <span class="preco">R$ 55,37</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/d91fb67a81031b678afc3ed3cb4ec596/1/2/12559_1_1.jpg" alt="Farmaron Pomada 200g">
+                <h4>Farmaron Pomada 200g</h4>
+                <span class="preco">R$ 49,55</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/7/1/71070_1_6.jpg" alt="Iver-Vet 3,5% Injetável 1000ml">
+                <h4>Iver-Vet 3,5% Injetável 1000ml</h4>
+                <span class="preco">R$ 324,62</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/3/8/38941_1_7.jpg" alt="Estron Injetável 60ml">
+                <h4>Estron Injetável 60ml</h4>
+                <span class="preco">R$ 45,41</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/8/9/89841_1_4.jpg" alt="Resfur 100ml">
+                <h4>Resfur 100ml</h4>
+                <span class="preco">R$ 465,36</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/8/1899_1_2.jpg" alt="Hepatoxan Valle 100ml">
+                <h4>Hepatoxan Valle 100ml</h4>
+                <span class="preco">R$ 31,59</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/5/5507_1_2.jpg" alt="Borgal 50ml">
+                <h4>Borgal 50ml</h4>
+                <span class="preco">R$ 76,21</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/4/14862_1_8.jpg" alt="Brinco Neocidol B40 Com 20 Unidades">
+                <h4>Brinco Neocidol B40 Com 20 Unidades</h4>
+                <span class="preco">R$ 84,47</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/7/5/75617_1_10.jpg" alt="All Atack 1 Litro"All Atack 1 Litro>
+                <h4>All Atack 1 Litro</h4>
+                <span class="preco">R$ 137,09</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/7/8/78865_1_11.jpg" alt="All Atack 5 Litros">
+                <h4>All Atack 5 Litros</h4>
+                <span class="preco">R$ 627,56</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/7/1786_1_7.jpg" alt="Mercepton Injetável 100ml">
+                <h4>Mercepton Injetável 100ml</h4>
+                <span class="preco">R$ 41,39</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/8/5834_1_6.jpg" alt="Monovin B12 20ml">
+                <h4>Monovin B12 20ml</h4>
+                <span class="preco">R$ 34,61</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+                
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/7/6749_1_6.jpg" alt="Monovin K 20ml">
+                <h4>Monovin K 20ml</h4>
+                <span class="preco">R$ 16,94</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/9/49425_1_8.jpg" alt="Suplemento Mineral Fosbovi 40 25 Kg">
+                <h4>Suplemento Mineral Fosbovi 40 25 Kg</h4>
+                <span class="preco">R$ 274,14</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/6/468_1_4.jpg" alt="Acatak Pour-On 1000ml">
+                <h4>Acatak Pour-On 1000ml</h4>
+                <span class="preco">R$ 161,32</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/7/1/7147_1_4.jpg" alt="Acatak Pour-On 5000ml">
+                <h4>Acatak Pour-On 5000ml</h4>
+                <span class="preco">R$ 729,94</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/9/5/959_1_1.jpg" alt="Ganaseg 7% 30ml">
+                <h4>Ganaseg 7% 30ml</h4>
+                <span class="preco">R$ 48,49Agrovet 5000 15ml</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/6/1685_1_1.jpg" alt="Agrovet 5000 15ml">
+                <h4>Agrovet 5000 15ml</h4>
+                <span class="preco">R$ 23,33</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/8/6865_1_2.jpg" alt="Ripercol 150 F 250ml">
+                <h4>Ripercol 150 F 250ml</h4>
+                <span class="preco">R$ 66,70</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/3/43839_1_5.jpg" alt="Cydectin Injetável 500ml">
+                <h4>Cydectin Injetável 500ml</h4>
+                <span class="preco">R$ 361,30</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/3/43858_1_8.jpg" alt="Dectomax 50ml">
+                <h4>Dectomax 50ml</h4>
+                <span class="preco">R$ 31,01</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/8/9/89729_1_3.jpg" alt="Dectomax 250ml">
+                <h4>Dectomax 250ml</h4>
+                <span class="preco">R$ 147,47</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>    
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/1/617_1_9.jpg" alt="Dectomax 500ml">
+                <h4>Dectomax 500ml</h4>
+                <span class="preco">R$ 271,48</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/7/1/71716_1.jpg" alt="Kinetomax 100ml">
+                <h4>Kinetomax 100ml</h4>
+                <span class="preco">R$ 129,05</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+            
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/8/1/81601_1.jpg" alt="Catosal B12 20ml">
+                <h4>Catosal B12 20ml</h4>
+                <span class="preco">R$ 27,80</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+        </div>
+    </div>
+</section>
+
+<!-- Produtos Pets -->
+<section class="products pets">
+    <div class="product-category">
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/1351/1351384.png" alt="Produtos Pets" width="40px"> Produtos Pets</h2>
+        <button class="toggle-button" onclick="toggleProducts('pets')">Ver Mais</button>
+        <div class="product-list pets">
+            
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/3/2/32823_2.jpg" alt="Ração Nature Pro Super Premium Cães Adultos De Grande Porte - 3kg">
+                <h4>Ração Nature Pro Super Premium Cães Adultos De Grande Porte - 3kg</h4>
+                <span class="preco">R$ 70,22</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/8/2/82553_1.jpg" alt="Ração Nature Pro Super Premium Cães Filhotes De Grande Porte - 15kg">
+                <h4>Ração Nature Pro Super Premium Cães Filhotes De Grande Porte - 15kg</h4>
+                <span class="preco">R$ 255,54</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/2/22771_1.jpg" alt="Ração Nature Pro Super Premium Cães Adultos De Pequeno E Médio Porte - 2,5kg">
+                <h4>Ração Nature Pro Super Premium Cães Adultos De Pequeno E Médio Porte - 2,5kg</h4>
+                <span class="preco">R$ 63,71</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/3/23418_1.jpg" alt="Ração Nature Pro Super Premium Cães Adultos De Pequeno E Médio Porte - 15kg">
+                <h4>Ração Nature Pro Super Premium Cães Adultos De Pequeno E Médio Porte - 15kg</h4>
+                <span class="preco">R$ 252,32</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/2/22772_1.jpg" alt="R$ 104,91">
+                <h4>R$ 104,91</h4>
+                <span class="preco"></span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
         </div>
     </div>
@@ -126,36 +327,44 @@
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/4/14778_1_7.jpg" alt="Algicida Choque 1l - Hidroazul">
                 <h4>Algicida Choque 1l - Hidroazul</h4>
-                <input type="number" placeholder="Quantidade" min="1"> </div>
+                <span class="preco">R$ 50,00</span>
+                <input type="number" placeholder="Quantidade" min="1">
+            </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/4/14660_1_7.jpg" alt="Algicida Manutenção 1l - Hidroazul">
                 <h4>Algicida Manutenção 1l - Hidroazul</h4>
+                <span class="preco">R$ 50,00</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/4/14661_1_6.jpg" alt="Algicida Manutenção 5l - Hidroazul">
                 <h4>Algicida Manutenção 5l - Hidroazul</h4>
+                <span class="preco">R$ 50,00</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/5/6526_1_6.jpg" alt="Barrilha Leve 02kg - Hidroazul">
                 <h4>Barrilha Leve 02kg - Hidroazul</h4>
+                <span class="preco">R$ 50,00</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/8/58469_1_5.jpg" alt="Cloro Multiação 1kg - Hidroazul">
                 <h4>Cloro Multiação 1kg - Hidroazul</h4>
+                <span class="preco">R$ 50,00</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/5/15130_1_5.jpg" alt="Cloro Multiação 2,5 Kg - Hidroazul">
                 <h4>Cloro Multiação 2,5 Kg - Hidroazul</h4>
+                <span class="preco">R$ 50,00</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
             
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/3/8/38490_1_6.jpg" alt="Desinfetante Para Piscinas Weekend 4kg Hidroazul">
                 <h4>Desinfetante Para Piscinas Weekend 4kg Hidroazul</h4>
+                <span class="preco">R$ 50,00</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
         </div>
     </div>
@@ -164,44 +373,140 @@
 <!-- Produtos de Ferramentas -->
 <section class="products ferramentas">
     <div class="product-category">
-        <h2><img src="https://cdn-icons-png.flaticon.com/128/1835/1835228.png" alt="Ferramentas" width="40px"> Ferramentas</h2>
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/1835/1835228.png" alt="Ferramentas" width="40px"> Ferramentas e Jardinagem</h2>
         <button class="toggle-button" onclick="toggleProducts('ferramentas')">Ver Mais</button>
         <div class="product-list">
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/7/17542_1_5.jpg" alt="Enxada Larga Canavieira 2,5 C/ Cabo 145cm - Tramontina">
                 <h4>Enxada Larga Canavieira 2,5 C/ Cabo 145cm - Tramontina</h4>
+                <span class="preco">R$ 65,68</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/2/22664_1_5.jpg" alt="Martelo De Unha 25mm Tramontina">
                 <h4>Martelo De Unha 25mm Tramontina</h4>
+                <span class="preco">R$ 43,05</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/1/21795_1_5.jpg" alt="Pá Debico Pequena C/ Cabo 45cm - Tramontina">
                 <h4>Pá Debico Pequena C/ Cabo 45cm - Tramontina</h4>
+                <span class="preco">R$ 31,35</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
                 
             <div class="product-item">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/2/2/22630_1_5.jpg" alt="Pá Quadrada C/ Cabo 71cm - Tramontina">
                 <h4>Pá Quadrada C/ Cabo 71cm - Tramontina</h4>
+                <span class="preco">R$ 40,76</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/1/61981_1_4.jpg" alt="Tesoura Vindima Vermelha 18cm">
                 <h4>Tesoura Vindima Vermelha 18cm</h4>
+                <span class="preco">R$ 55,29</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
 
             <div class="product-item hidden">
                 <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/5/5/553_1_4.jpg" alt="Lima Para Enxada 8' - K&F">
                 <h4>Lima Para Enxada 8' - K&F</h4>
+                <span class="preco">R$ 22,54</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/9/4/9428_1_4.jpg" alt="Semente De Quiabo Santa Cruz 47 100g- Feltrin">
+                <h4>Semente De Quiabo Santa Cruz 47 100g- Feltrin</h4>
+                <span class="preco">R$ 16,90</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/1/11767_1_3.jpg" alt="Semente De Quiabo Santa Cruz 47 De 500g - Feltrin">
+                <h4>Semente De Quiabo Santa Cruz 47 De 500g - Feltrin</h4>
+                <span class="preco">R$ 50,13</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/0/10477_1_4.jpg" alt="Semente De Quiabo Santa Cruz 47 1kg - Feltrin">
+                <h4>Semente De Quiabo Santa Cruz 47 1kg - Feltrin</h4>
+                <span class="preco">R$ 50,13</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/7/17428_1_5.jpg" alt="Semente De Melância Crimson Sweet 50g - Feltrin">
+                <h4>Semente De Melância Crimson Sweet 50g - Feltrin</h4>
+                <span class="preco">R$ 35,07</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/2/42301_1_2.jpg" alt="Sementes De Jiló Redondo Morro Grande Golden - Feltrin">
+                <h4>Sementes De Jiló Redondo Morro Grande Golden - Feltrin</h4>
+                <span class="preco">R$ 4,92</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/d91fb67a81031b678afc3ed3cb4ec596/4/2/42261_1_2.jpg" alt="Sementes De Salsa Lisa - Feltrin">
+                <h4>Sementes De Salsa Lisa - Feltrin</h4>
+                <span class="preco">R$ 4,92</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/0/10842_1_5.jpg" alt="Semente De Abóbora Xingo Jacarezinho 100g - Feltrin">
+                <h4>Semente De Abóbora Xingo Jacarezinho 100g - Feltrin</h4>
+                <span class="preco">R$ 58,28</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/2/12741_1.jpg" alt="Semente De Abóbora Maranhão Feltrin">
+                <h4>Semente De Abóbora Maranhão Feltrin</h4>
+                <span class="preco">R$ 67,50</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/5/15096_1_4.jpg" alt="Semente De Coentro Português Pacífico 500g Feltrin">
+                <h4>Semente De Coentro Português Pacífico 500g Feltrin</h4>
+                <span class="preco">R$ 41,91</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
             
             <div class="product-item hidden">
-                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/1/7/17976_1_7.jpg" alt="Vassoura Jardim Plástica 26 Dentes Cabo 120cm">
-                <h4>Desinfetante Para Piscinas Weekend 4kg Hidroazul</h4>
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/8/2/82451_1_1.jpg" alt="Forth Jabuticabeiras Fertilizante 3kg">
+                <h4>Forth Jabuticabeiras Fertilizante 3kg</h4>
+                <span class="preco">R$ 49,80</span>
                 <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/4/2/42225_1_2.jpg" alt="Sementes De Couve Chinesa Michihilii Golden - Feltrin">
+                <h4>Sementes De Couve Chinesa Michihilii Golden - Feltrin</h4>
+                <span class="preco">R$ 4,90</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+
+            <div class="product-item hidden">
+                <img src="https://www.casadoadubo.com.br/media/catalog/product/cache/7f4b2cfb183c1f02d1e0a18a44893e55/6/7/67650_1_7.jpg" alt="Sementes De Cebola Baia Herval Golden - Feltrin">
+                <h4>Sementes De Cebola Baia Herval Golden - Feltrin</h4>
+                <span class="preco">R$ 4,92</span>
+                <input type="number" placeholder="Quantidade" min="1"> </div>
+        </div>
+    </div>
+</section>
+
+<!-- Produtos Irrigação -->
+<section class="products irrigação">
+    <div class="product-category">
+        <h2><img src="https://cdn-icons-png.flaticon.com/128/2194/2194802.png" alt="Produtos irrigação" width="40px"> Produtos Irrigação</h2>
+        <button class="toggle-button" onclick="toggleProducts('irrigação')">Ver Mais</button>
+        <div class="product-list irrigação">
+            <div class="product-item">
+                <img src="https://example.com/img-pet1.jpg" alt="Ração para Cachorro 10kg">
+                <h4>Ração para Cachorro 10kg</h4>
+                <span class="preco">R$ 50,00</span>
+                <input type="number" placeholder="Quantidade" min="1">
+            </div>
+            <div class="product-item">
+                <img src="https://example.com/img-pet2.jpg" alt="Brinquedo para Gato">
+                <h4>Brinquedo para Gato</h4>
+                <span class="preco">R$ 50,00</span>
+                <input type="number" placeholder="Quantidade" min="1">
+            </div>
+            <!-- Mais produtos aqui -->
         </div>
     </div>
 </section>
@@ -256,7 +561,7 @@
             <p>Site desenvolvido por <a href="https://github.com/devjoao-xoli" target="_blank" id="sitedev">João Pedro🤓</a></p>
         </div>
     </footer>
-
+    
     <script>
         // Chamar a função para exibir os primeiros 4 produtos ao carregar a página
     document.addEventListener('DOMContentLoaded', showInitialProducts);
@@ -420,31 +725,37 @@
     }
 
     // Função para enviar o pedido via WhatsApp
-    function enviarPedido() {
-        const nomeCompleto = document.getElementById('nomeCompleto').value;
-        const nomeFazenda = document.getElementById('nomeFazenda').value;
-        const cpf = document.getElementById('cpf').value;
+function enviarPedido() {
+    const nomeCompleto = document.getElementById('nomeCompleto').value;
+    const nomeFazenda = document.getElementById('nomeFazenda').value;
+    const cpf = document.getElementById('cpf').value;
 
-        // Pega a lista de produtos e quantidades
-        const produtosSelecionados = [];
-        document.querySelectorAll('.product-item').forEach(produto => {
-            const quantidade = produto.querySelector('input[type="number"]').value;
-            const nomeProduto = produto.querySelector('h4').textContent;
-            if (quantidade > 0) {
-                produtosSelecionados.push(`${nomeProduto}: ${quantidade}`);
-            }
-        });
+    // Pega a lista de produtos, quantidades e preços
+    let total = 0;
+    const produtosSelecionados = [];
+    document.querySelectorAll('.product-item').forEach(produto => {
+        const quantidade = produto.querySelector('input[type="number"]').value;
+        const nomeProduto = produto.querySelector('h4').textContent;
+        const precoProduto = produto.querySelector('.preco').textContent.replace('R$', '').trim();
 
-        if (!vendedorSelecionado || produtosSelecionados.length === 0 || !nomeCompleto || !nomeFazenda || !cpf) {
-            alert('Por favor, preencha todas as informações e selecione ao menos um produto.');
-            return;
+        if (quantidade > 0) {
+            const precoTotalProduto = quantidade * parseFloat(precoProduto);
+            total += precoTotalProduto;
+            produtosSelecionados.push(`${nomeProduto}: ${quantidade} x R$ ${precoProduto} = R$ ${precoTotalProduto.toFixed(2)}`);
         }
+    });
 
-        const mensagem = `Olá, ${vendedorSelecionado}!\n\nGostaria de fazer o seguinte pedido:\n\nCliente: ${nomeCompleto}\nFazenda: ${nomeFazenda}\nCPF: ${cpf}\n\nProdutos:\n${produtosSelecionados.join('\n')}`;
-        const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
-
-        window.open(urlWhatsApp, '_blank');
+    if (!vendedorSelecionado || produtosSelecionados.length === 0 || !nomeCompleto || !nomeFazenda || !cpf) {
+        alert('Por favor, preencha todas as informações e selecione ao menos um produto.');
+        return;
     }
+
+    const mensagem = `Olá, ${vendedorSelecionado}!\n\nGostaria de fazer o seguinte pedido:\n\nCliente: ${nomeCompleto}\nFazenda: ${nomeFazenda}\nCPF: ${cpf}\n\nProdutos:\n${produtosSelecionados.join('\n')}\n\nTotal: R$ ${total.toFixed(2)}`;
+    const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(urlWhatsApp, '_blank');
+}
+
     </script>
     </body>
 </html>
