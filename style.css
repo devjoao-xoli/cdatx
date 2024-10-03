@@ -35,7 +35,7 @@ header img {
     color: #fff;
     padding: 50px 10px;
     text-align: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .hero h2 {
@@ -80,6 +80,7 @@ header img {
 
 .product-category {
     margin-bottom: 40px;
+    margin-left: 20px;
 }
 
 .product-category h2 {
@@ -92,7 +93,7 @@ header img {
 
 /* Estilo para as subdivisões */
 .product-subcategory {
-    margin-left: 20px;
+    
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 20px;
@@ -320,6 +321,10 @@ footer p {
         flex: 1 1 calc(50% - 10px);
         box-sizing: border-box;
         max-width: 130px;
+    }
+
+    .product-item h4 {
+        font-size: .8em;
     }
     
     footer {
